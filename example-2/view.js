@@ -10,6 +10,13 @@ class View {
     console.log(this.mainContainerEl);
   }
 
+  displayTitle(text) {
+    const h1Elements = document.querySelectorAll("h1");
+    h1Elements.forEach((h1) => {
+      h1.textContent = text;
+    });
+  }
+
   addParagraph(text) {
     let newParagraph = document.createElement("p");
     newParagraph.textContent = text; //.innerText ?
