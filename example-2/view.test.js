@@ -26,6 +26,16 @@ describe("A test for my web page", () => {
     // 3. Assert - we assert the page contains what it should.
     expect(document.querySelector("h1").textContent).toBe("My amazing website");
   });
+
+  it("adds a paragraph", () => {
+    const view = new View();
+
+    view.addParagraph(
+      "This paragraph has been dynamically added by JavaScript!"
+    );
+
+    expect(document.querySelectorAll("p").length).toBe(3);
+  });
 });
 
 // initial test example
