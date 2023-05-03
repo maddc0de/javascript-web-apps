@@ -36,6 +36,12 @@ describe("A test for my web page", () => {
 
     expect(document.querySelectorAll("p").length).toBe(3);
   });
+
+  it("removes all the paragraphs", () => {
+    const view = new View();
+    view.clearParagraph();
+    expect(document.querySelectorAll("p").length).toBe(0);
+  });
 });
 
 // initial test example

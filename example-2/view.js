@@ -23,6 +23,12 @@ class View {
 
     this.mainContainerEl.append(newParagraph);
   }
+
+  clearParagraph() {
+    this.allParagraphs.forEach((paragraph) => {
+      paragraph.remove();
+    });
+  }
 }
 
 module.exports = View;
