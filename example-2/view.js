@@ -10,16 +10,17 @@ class View {
     console.log(this.mainContainerEl);
   }
 
-  displayTitle(text) {
+  displayTitle() {
     const h1Elements = document.querySelectorAll("h1");
     h1Elements.forEach((h1) => {
-      h1.textContent = text;
+      h1.textContent = "My amazing website";
     });
   }
 
-  addParagraph(text) {
+  addParagraph() {
     let newParagraph = document.createElement("p");
-    newParagraph.textContent = text; //.innerText ?
+    newParagraph.textContent =
+      "This paragraph has been dynamically added by Javascript!"; //.innerText ?
 
     this.mainContainerEl.append(newParagraph);
   }

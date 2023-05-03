@@ -21,7 +21,7 @@ describe("A test for my web page", () => {
     const view = new View();
 
     // 2. Act - call any method that modifies the page
-    view.displayTitle("My amazing website");
+    view.displayTitle();
 
     // 3. Assert - we assert the page contains what it should.
     expect(document.querySelector("h1").textContent).toBe("My amazing website");
@@ -30,9 +30,7 @@ describe("A test for my web page", () => {
   it("adds a paragraph", () => {
     const view = new View();
 
-    view.addParagraph(
-      "This paragraph has been dynamically added by JavaScript!"
-    );
+    view.addParagraph();
 
     expect(document.querySelectorAll("p").length).toBe(3);
   });
