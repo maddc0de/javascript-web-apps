@@ -16,6 +16,9 @@ class GithubView {
     // Set the content of the #repo-description el to equal the value of the description property from repo data.
     const repoDesc = document.querySelector("#repo-description");
     repoDesc.textContent = info.description;
+    // Set the content of #repo-img to equal the value of the image from repo data
+    const repoImg = document.querySelector("#repo-img");
+    repoImg.src = info.organization.avatar_url;
   }
 
   addRepoInfo() {
