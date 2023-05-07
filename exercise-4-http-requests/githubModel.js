@@ -1,6 +1,6 @@
 class GithubModel {
   constructor() {
-    this.repoInfo = null
+    this.repoInfo = null;
   }
 
   setRepoInfo(repoInfo) {
